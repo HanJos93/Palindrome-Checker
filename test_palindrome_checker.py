@@ -1,4 +1,4 @@
-import unittest
+import unittest #test
 
 class smoke_test (unittest.TestCase):
     def test1plus1(self):
