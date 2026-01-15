@@ -1,8 +1,11 @@
 import unittest
 
-class smoke_test (unittest.TestCase):
-    def test1plus1(self):
-        self.assertEqual(1+1, 2)
+from palindromes import is_palindrome
+
+class palindrome_test (unittest.TestCase):
+    def test_pali_is_true(self):
+        self.assertTrue(is_palindrome("racecar"))
+        self.assertFalse(is_palindrome("a racecar"))
 
 if __name__ == "__main__":
     unittest.main()
