@@ -1,2 +1,2 @@
 def is_palindrome(pal):
-    return True
+    return pal == pal [::-1]
